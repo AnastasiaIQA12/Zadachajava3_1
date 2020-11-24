@@ -63,8 +63,8 @@
                                 <rule>
                                     <element>CLASS</element>
                                     <excludes>
-                                    <exclude>*Test</exclude>
-                                    <exclude>Conditioner</exclude>
+                                        <exclude>*Test</exclude>
+                                        <exclude>Conditioner</exclude>
                                     </excludes>
                                     <limits>
                                         <limit>
@@ -89,7 +89,7 @@
                             </rules>
                         </configuration>
                     </execution>
-                 </executions>
+                </executions>
             </plugin>
         </plugins>
     </build>
