@@ -11,7 +11,7 @@ class RadioTest {
     public void shouldNextRadioStation() {
         int currentRadioStation = 9;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.nextRadioStation(radio.getCurrentRadioStation());
+        radio.nextRadioStation();
         assertEquals(0, radio.getCurrentRadioStation());
     }
 
@@ -19,7 +19,7 @@ class RadioTest {
     public void shouldNextRadioStation1() {
         int currentRadioStation = 5;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.nextRadioStation(radio.getCurrentRadioStation());
+        radio.nextRadioStation();
         assertEquals(6, radio.getCurrentRadioStation());
     }
 
@@ -27,7 +27,7 @@ class RadioTest {
     public void shouldNextRadioStation2() {
         int currentRadioStation = 10;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.nextRadioStation(radio.getCurrentRadioStation());
+        radio.nextRadioStation();
         assertEquals(1, radio.getCurrentRadioStation());
     }
 
@@ -35,7 +35,7 @@ class RadioTest {
     public void shouldPrevRadioStation() {
         int currentRadioStation = 0;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.prevRadioStation(radio.getCurrentRadioStation());
+        radio.prevRadioStation();
         assertEquals(9, radio.getCurrentRadioStation());
     }
 
@@ -43,7 +43,7 @@ class RadioTest {
     public void shouldPrevRadioStation1() {
         int currentRadioStation = -1;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.prevRadioStation(radio.getCurrentRadioStation());
+        radio.prevRadioStation();
         assertEquals(9, radio.getCurrentRadioStation());
     }
 
@@ -51,7 +51,7 @@ class RadioTest {
     public void shouldPrevRadioStation2() {
         int currentRadioStation = 5;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.prevRadioStation(radio.getCurrentRadioStation());
+        radio.prevRadioStation();
         assertEquals(4, radio.getCurrentRadioStation());
     }
 
@@ -86,7 +86,7 @@ class RadioTest {
     public void shouldDecreaseVolume() {
         int currentSoundVolume = 10;
         radio.setCurrentVolume(currentSoundVolume);
-        radio.decreaseSoundVolume(radio.getCurrentVolume());
+        radio.decreaseSoundVolume();
         assertEquals(10, radio.getCurrentVolume());
     }
 
@@ -94,7 +94,7 @@ class RadioTest {
     public void shouldDecreaseSoundVolume1() {
         int currentSoundVolume = 5;
         radio.setCurrentVolume(currentSoundVolume);
-        radio.decreaseSoundVolume(radio.getCurrentVolume());
+        radio.decreaseSoundVolume();
         assertEquals(6, radio.getCurrentVolume());
     }
 
@@ -102,7 +102,7 @@ class RadioTest {
     public void shouldDecreaseSoundVolume2() {
         int currentSoundVolume = 11;
         radio.setCurrentVolume(currentSoundVolume);
-        radio.decreaseSoundVolume(radio.getCurrentVolume());
+        radio.decreaseSoundVolume();
         assertEquals(1, radio.getCurrentVolume());
     }
 
@@ -110,7 +110,7 @@ class RadioTest {
     public void shouldIncreaseSoundVolume() {
         int currentSoundVolume = 5;
         radio.setCurrentVolume(currentSoundVolume);
-        radio.increaseSoundVolume(radio.getCurrentVolume());
+        radio.increaseSoundVolume();
         assertEquals(4, radio.getCurrentVolume());
     }
 
@@ -118,7 +118,7 @@ class RadioTest {
     public void shouldIncreaseSoundVolume1() {
         int currentSoundVolume = 0;
         radio.setCurrentVolume(currentSoundVolume);
-        radio.increaseSoundVolume(radio.getCurrentVolume());
+        radio.increaseSoundVolume();
         assertEquals(0, radio.getCurrentVolume());
     }
 
@@ -126,7 +126,7 @@ class RadioTest {
     public void shouldIncreaseSoundVolume2() {
         int currentSoundVolume = -1;
         radio.setCurrentVolume(currentSoundVolume);
-        radio.increaseSoundVolume(radio.getCurrentVolume());
+        radio.increaseSoundVolume();
         assertEquals(0, radio.getCurrentVolume());
     }
 

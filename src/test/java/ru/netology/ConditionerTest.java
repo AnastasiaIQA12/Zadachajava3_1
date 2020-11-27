@@ -19,7 +19,7 @@ class ConditionerTest {
     public void shouldIncreaseTemperatureOnOneDegree() {
         int currentTemperature = 27;
         conditioner.setCurrentTemperature(currentTemperature);
-        conditioner.increaseCurrentTemperature(conditioner.getCurrentTemperature());
+        conditioner.increaseCurrentTemperature();
         assertEquals(28, conditioner.getCurrentTemperature());
     }
 
@@ -27,7 +27,7 @@ class ConditionerTest {
     public void shouldIncreaseTemperatureOnOneDegree1() {
         int currentTemperature = 31;
         conditioner.setCurrentTemperature(currentTemperature);
-        conditioner.increaseCurrentTemperature(conditioner.getCurrentTemperature());
+        conditioner.increaseCurrentTemperature();
         assertEquals(30, conditioner.getCurrentTemperature());
     }
 
@@ -35,7 +35,7 @@ class ConditionerTest {
     public void shouldDecreaseTemperatureOnOneDegree() {
         int currentTemperature = 21;
         conditioner.setCurrentTemperature(currentTemperature);
-        conditioner.decreaseCurrentTemperature(conditioner.getCurrentTemperature());
+        conditioner.decreaseCurrentTemperature();
         assertEquals(20, conditioner.getCurrentTemperature());
     }
 
@@ -43,7 +43,7 @@ class ConditionerTest {
     public void shouldDecreaseTemperatureOnOneDegree1() {
         int currentTemperature = 17;
         conditioner.setCurrentTemperature(currentTemperature);
-        conditioner.decreaseCurrentTemperature(conditioner.getCurrentTemperature());
+        conditioner.decreaseCurrentTemperature();
         assertEquals(18, conditioner.getCurrentTemperature());
     }
 }
